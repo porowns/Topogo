@@ -23,3 +23,4 @@ For safety, users are required to share their full name and address.
 # Team
 Kaleb Porter
 Nicholas Petty
+Tyler Dean 
