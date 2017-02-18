@@ -21,6 +21,8 @@ For safety, users are required to share their full name and address.
 9. User can complete a task
 
 # Team
-Kaleb Porter
-Nicholas Petty
-Tyler Dean 
+Kaleb P
+
+Nicholas P
+
+Tyler D
