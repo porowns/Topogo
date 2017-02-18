@@ -53,6 +53,11 @@ app.get('/',function(req,res){
   //__dirname : It will resolve to your project folder.
 });
 
+app.get('/map',function(req,res){
+  res.sendFile(path.join(__dirname+'/map.html'));
+  //__dirname : It will resolve to your project folder.
+});
+
 // Start Server
 app.listen(port, () => {
   console.log('Server started on port '+port);
