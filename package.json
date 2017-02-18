@@ -1,0 +1,19 @@
+{
+  "name": "topogo",
+  "version": "1.0.0",
+  "description": "quest web application for local tasks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/porowns/Topogo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/porowns/Topogo/issues"
+  },
+  "homepage": "https://github.com/porowns/Topogo#readme"
+}
