@@ -27,3 +27,8 @@ Kaleb P
 Nicholas P
 
 Tyler D
+
+
+# Conclusion
+
+Our team bit off a bit more than we could chew on this one, as we were all first-time hackers and had little to no experience with web applications. We did our best, and managed to get up a web application than can display five markers customly input by the user, on a google map. 
