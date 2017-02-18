@@ -14,22 +14,59 @@
     <p style="text-align: center; color: green; font-size: 16px;">
     Want to make money? Then you're in luck. Topogo is an app that lets you see people in your local area who need an extra hand in activities like yard work or cleaning for quick and easy cash.
   </p>
-  <form style="background-color: black; color: green;">
-  <form action="localhost:3000/users/register" method="post">
+  <form enctype="application/x-www-form-urlencoded" action="/users/register" method="post">
     <fieldset>
 
       <label for="name">First Name: </label>
       <input style="text-align: center; color: #90f48b; border-color: black; background-color: black;"type="text" placeholder="First Name" name="name">
 
-      <p><label for="mail">Email Address: </label>
-      <input style="text-align: center; color: #90f48b; border-color: black; background-color: black;"type="text" placeholder="Email Address" mail="mail"></p>
+      <label for="email">Email: </label>
+      <input style="text-align: center; color: #90f48b; border-color: black; background-color: black;"type="text" placeholder="Email" name="email">
 
-      <p><label for="user">Username: </label>
-      <input style="text-align: center; color: #90f48b; border-color: black; background-color: black;"type="text" placeholder="Username" user="user"></p>
+      <label for="username">Username:  </label>
+      <input style="text-align: center; color: #90f48b; border-color: black; background-color: black;"type="text" placeholder="Username" name="username">
 
-      <label for="pass">Password: </label>
-      <input style="text-align: center; color: #90f48b; border-color: black; background-color: black;" type="text" placeholder="Password" pass="pass">
+      <label for="password">Password </label>
+      <input style="text-align: center; color: #90f48b; border-color: black; background-color: black;"type="text" placeholder="pass" name="password">
 
-      <input type="submit" value="Hit dat" />
+      <input type="submit" value="register" />
+    </fieldset>
+  </form>
+
+  <form enctype="application/x-www-form-urlencoded" action="/users/authenticate" method="post">
+    <fieldset>
+
+      <label for="name">First Name: </label>
+      <input style="text-align: center; color: #90f48b; border-color: black; background-color: black;"type="text" placeholder="First Name" name="name">
+
+      <label for="email">Email: </label>
+      <input style="text-align: center; color: #90f48b; border-color: black; background-color: black;"type="text" placeholder="Email" name="email">
+
+      <label for="username">Username:  </label>
+      <input style="text-align: center; color: #90f48b; border-color: black; background-color: black;"type="text" placeholder="Username" name="username">
+
+      <label for="password">Password </label>
+      <input style="text-align: center; color: #90f48b; border-color: black; background-color: black;"type="text" placeholder="pass" name="password">
+
+      <input type="submit" value="login" />
+    </fieldset>
+  </form>
+
+  <form enctype="application/x-www-form-urlencoded" action="/tasks/createtask" method="post">
+    <fieldset>
+
+      <label for="name">Name: </label>
+      <input style="text-align: center; color: #90f48b; border-color: black; background-color: black;"type="text" placeholder="Task Name" name="name">
+
+      <label for="creator">Creator </label>
+      <input style="text-align: center; color: #90f48b; border-color: black; background-color: black;"type="text" placeholder="Creator" name="creator">
+
+      <label for="latitude">Latitude  </label>
+      <input style="text-align: center; color: #90f48b; border-color: black; background-color: black;"type="text" placeholder="Lat" name="latitude">
+
+      <label for="longitude">Longitude </label>
+      <input style="text-align: center; color: #90f48b; border-color: black; background-color: black;"type="text" placeholder="Long" name="longitude">
+
+      <input type="submit" value="create task!" />
     </fieldset>
   </form>

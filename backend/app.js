@@ -35,6 +35,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Body Parser Middleware
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Passport Middleware
@@ -47,8 +48,9 @@ app.use('/users', users);
 app.use('/tasks', tasks);
 
 // Index Route
-app.get('/', (req, res) => {
-  res.send('Invalid Endpoint');
+app.get('/',function(req,res){
+  res.sendFile(path.join(__dirname+'/index.html'));
+  //__dirname : It will resolve to your project folder.
 });
 
 // Start Server

@@ -8,6 +8,36 @@ const config = require('../config/database');
 // Register
 router.post('/register', (req, res, next) => {
   console.log("user register hit");
+
+  if (!req.body.name || req.body.name == "") {
+    res.json({
+      success: false,
+      msg: 'Please enter a name'
+    });
+    return;
+  }
+  if (!req.body.email || req.body.email == "") {
+    res.json({
+      success: false,
+      msg: 'Please enter email'
+    });
+    return;
+  }
+  if (!req.body.username || req.body.username == "") {
+    res.json({
+      success: false,
+      msg: 'Please enter username'
+    });
+    return;
+  }
+  if (!req.body.password || req.body.password == "") {
+    res.json({
+      success: false,
+      msg: 'Please enter password'
+    });
+    return;
+  }
+
   let newUser = new User({
     name: req.body.name,
     email: req.body.email,
