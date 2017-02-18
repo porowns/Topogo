@@ -1,6 +1,5 @@
 # Topogo
 Project for Hack FSU 2017.
-Nicholas Petty
 # Project Description
 Topogo is a map representation of local yardwork, tasks, and more. Users can create an account and create a task, or complete a task for points. 
 
@@ -23,3 +22,4 @@ For safety, users are required to share their full name and address.
 
 # Team
 Kaleb Porter
+Nicholas Petty
