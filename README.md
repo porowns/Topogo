@@ -6,8 +6,9 @@ Topogo is a map representation of local yardwork, tasks, and more. Users can cre
 For safety, users are required to share their full name and address.
 
 # Features
-1. Create tasks for users to complete
-2. Complete tasks for points
+1. Backend allowing POST requests to register, login (and receive RSA token), and create tasks.
+2. Front end allowing users to interact with the backend.
+3. Front end allowing users to view tasks created on map.
 
 # User Stories
 1. User create an account (username, password, address, full name)
