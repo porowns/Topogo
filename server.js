@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Routes
-app.use('/', require('./controllers/hello.js'));
+app.use('/', require('./controllers/register.js'));
 
 
 // start server
